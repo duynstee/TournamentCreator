@@ -1,0 +1,60 @@
+﻿@page
+@model CreaterTournament.Pages.PlayerList.IndexModel
+
+
+<br />
+<div class="container row p-0 m-0">
+    <div class="col-9">
+        <h2 class="text-info">Player List</h2>
+    </div>
+    <div class="col-3">
+        <a asp-page="Create" class="btn btn-info form-control text-white">Add New Player</a>
+    </div>
+
+
+    <div class="col-12 border p-3 mt-3"
+         <form method="post">
+             @if(Model.Players.Count() > 0)
+             {
+                <table class="table table-striped border">
+                    <tr class="table-secondary">
+                        <th>
+                            <label asp-for="Players.FirstOrDefault().Name"></label>
+                        </th>
+                        <th>
+                            @*Html.DisplayNameFor(m=>m.Players.FirstOrDefault().Name*@
+                            <label asp-for="Players.FirstOrDefault().Rating"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Players.FirstOrDefault().IPIN"></label>
+                        </th>
+                    </tr>
+                    @foreach (var item in Model.Players)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(m => item.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(m => item.Rating)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(m => item.IPIN)
+                            </td>
+                            <td>    
+                                <button asp-page-handler="Delete" asp-route-id="@item.Id" onclick="return confirm('Do you want to delete the player?')" class="btn btn-danger btn-sm">Delete</button>
+                                <a asp-page="Edit" asp-route-id="@item.Id" class="btn btn-success btn-sm text-white">Edit</a>
+                            </td>
+                        </tr>
+                    }
+                </table>
+             }
+             else
+             {
+                 <p>No Players yet...</p>
+             }
+
+
+
+         </form>
+</div>

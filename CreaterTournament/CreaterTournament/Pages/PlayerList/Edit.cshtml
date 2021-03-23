@@ -1,0 +1,55 @@
+﻿@page
+@model CreaterTournament.Pages.PlayerList.EditModel
+
+
+
+<br />
+<h2 class="text-info">Edit a Player</h2>
+<br />
+
+<div class="border container" style="padding:30px;">
+    <form method="post">
+        
+        <input type="hidden" asp-for="Player.Id" />
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="Player.Name"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Player.Name" class="form-control" />
+            </div>
+            <span asp-validation-for="Player.Name" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="Player.Rating"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Player.Rating" class="form-control" />
+            </div>
+            <span asp-validation-for="Player.Rating" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="Player.IPIN"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Player.IPIN" class="form-control" />
+            </div>
+            <span asp-validation-for="Player.IPIN" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-6 offsett-4">
+                <input type="submit" value="Update" class="btn btn-primary form-control" />
+            </div>
+            <div class="col-3">
+                <a asp-page="Index" class="btn btn-success form-control">Back to List</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
