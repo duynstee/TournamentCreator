@@ -28,6 +28,7 @@ namespace CreaterTournament.Pages.PlayerList
         public async Task<IActionResult> OnPostDelete(int id)
         {
             var player = await _db.Player.FindAsync(id);
+            
             if (player == null)
             {
                 return NotFound();

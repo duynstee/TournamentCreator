@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xCQNUdVD4TkB/BE1Pv6ljWNWlSSSosgkkdUiATIMycpWUpKjbBdmNVrehMx2ckVA0tNQWX1ED+6lvDG0+v3GMQ==",
+  "dgSpecHash": "SY9BiC0OyXU9EZ9o7hpdVA4BN+6OAICdPwGeQHq5oVk35moRsU6l4le+R0cz1cEbjd2PVTqM9LL+L1N+acxT0A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Olaf\\source\\repos\\CreaterTournament\\CreaterTournament\\CreaterTournament.csproj",
+  "projectFilePath": "C:\\Users\\Olaf\\Documents\\GitHub\\TournamentCreator\\CreaterTournament\\CreaterTournament\\CreaterTournament.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Olaf\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Olaf\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\3.1.13\\microsoft.aspnetcore.mvc.razor.extensions.3.1.13.nupkg.sha512",

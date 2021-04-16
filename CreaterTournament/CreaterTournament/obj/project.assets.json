@@ -6305,11 +6305,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Olaf\\source\\repos\\CreaterTournament\\CreaterTournament\\CreaterTournament.csproj",
+      "projectUniqueName": "C:\\Users\\Olaf\\Documents\\GitHub\\TournamentCreator\\CreaterTournament\\CreaterTournament\\CreaterTournament.csproj",
       "projectName": "CreaterTournament",
-      "projectPath": "C:\\Users\\Olaf\\source\\repos\\CreaterTournament\\CreaterTournament\\CreaterTournament.csproj",
+      "projectPath": "C:\\Users\\Olaf\\Documents\\GitHub\\TournamentCreator\\CreaterTournament\\CreaterTournament\\CreaterTournament.csproj",
       "packagesPath": "C:\\Users\\Olaf\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Olaf\\source\\repos\\CreaterTournament\\CreaterTournament\\obj\\",
+      "outputPath": "C:\\Users\\Olaf\\Documents\\GitHub\\TournamentCreator\\CreaterTournament\\CreaterTournament\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Olaf\\AppData\\Roaming\\NuGet\\NuGet.Config",
